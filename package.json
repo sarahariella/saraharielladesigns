@@ -1,0 +1,16 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "Project template",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Sarah Israel",
+  "private": true,
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "simple-parallax-js": "^5.3.0"
+  }
+}

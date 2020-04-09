@@ -1,0 +1,370 @@
+html{
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height:2000px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+  
+::-webkit-scrollbar {
+    display:none;
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 2;
+    background-color:black;
+}
+
+.contact{
+    margin-right: 5%;
+}
+
+.logo{
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    color: #d0c1f0;
+    padding: none;
+    margin: none;
+    padding-right: 50px;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #d0c1f0;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(208, 193, 240, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color:rgba(208, 193, 240, 0.8);
+}
+
+
+.slide {
+    width: 100vw;
+    height: 1000vh;
+    display:flex;
+}
+
+#slide1 {
+    background:white;
+    text-align: center;
+}
+
+#slide3 {
+    background: black;
+    display: block;
+}
+
+h3{
+    margin-top: 150px;
+    font-size: 50px;
+    color: white;
+    padding-left: 150px;
+    font-family: 'Bungee Shade', cursive;
+    cursor: pointer;
+}
+
+h3:hover{
+    color: #d0c1f0;
+}
+
+h4{
+    color: white;
+    margin-left: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px; 
+    margin-top: 100px;
+}
+
+h5{
+    color: white;
+    margin-left:70px;
+    font-size: 30px;
+    font-family: 'Bungee Shade', cursive;
+    cursor: pointer;
+}
+
+h5:hover{
+    color:#d0c1f0;
+}
+
+.about{
+    height: 300vh;
+    display: flex;
+}
+
+.title{
+    width: 50%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pages{
+    width:50%;
+    color: white;
+}
+
+.pages div{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:white;
+
+}
+
+.pages div>p{
+    width: 80%;
+    font-size:18px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pages div:nth-child(1){
+    background-color: rgba(208, 193, 240, 1);
+}
+
+.pages div>button{
+    padding: 9px 25px;
+    background-color: white;
+    color: #d0c1f0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.pages div>button:hover{
+    color:#fff;
+    background-color: #d0c1f0;
+    border: 2px solid #fff;
+}
+
+.container{
+    width: 1280px;
+    min-height: 500px;
+    margin: 110px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block; 
+}
+
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img{
+    max-width: 100%;
+    height: 300px;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    margin-left: 18%;
+}
+
+.container .box .details .content p{
+    margin: 0;
+    padding: 0; 
+    font-size: 20px;
+    color: #d0c1f0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .box .details .content button{
+margin-top: 25px;
+color: #fff;
+background-color: rgba(0,0,0,.8);
+border: 2px solid #fff;
+}
+
+.container .box .details .content button:hover{
+    margin-top: 25px;
+    color: rgba(0,0,0,.8);
+    background-color:#fff;
+    border: 2px solid rgba(0,0,0,.8);
+}
+    
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-right: 30px;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10rem;
+    z-index: -2;
+}
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #d0c1f0;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+.button:hover {
+    color: #fff;
+}
+.button:hover:before {
+    width: 100%;
+}
+
+.typewriter h1 {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 400px;
+    overflow: hidden; 
+    border-right: .15em solid #d0c1f0; 
+    white-space: nowrap; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blinkLine .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blinkLine {
+    from, to { border-color: transparent }
+    50% { border-color: #d0c1f0 }
+}
+  
+.typewriter{
+    margin-left: 20%;
+}
+
+h1:hover{
+    font-family: 'Bungee Shade', cursive;
+    color: #d0c1f0;
+    cursor: pointer;
+}
+
+h1:active{
+    font-family: 'Poiret One', cursive;
+    cursor: pointer;
+    color: #99E5FF;
+
+}
