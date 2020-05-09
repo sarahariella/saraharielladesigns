@@ -1,37 +1,43 @@
+@font-face {
+    font-family: SpaceAge;
+    src: url("../fonts/space_age_copy.eot") 
+   }
+
+@font-face {
+font-family:SpaceAge;
+src: url("../fonts/space_age.ttf") 
+}
+
+@font-face {
+    font-family: Gotham;
+    src: url("../fonts/gotham.eot") 
+   }
+
+@font-face {
+font-family:Adidas;
+src: url("../fonts/adidas.ttf") 
+}
+
+@font-face {
+    font-family: Adidas;
+    src: url("../fonts/adidas.eot") 
+   }
+
+@font-face {
+font-family:Gotham;
+src: url("../fonts/gotham.ttf") 
+}
+
 html{
     height: 100%;
-    /* overflow: hidden; */
+    max-width: 100%;
 }
 
 body{
-    background-color: black;
+    background-color: white;
     margin: 0;
     padding: 0;
-    height:2000px;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 400vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
-}
-
-.outer-wrapper {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
-  
-::-webkit-scrollbar {
-    display:none;
+    max-width: 100%
 }
 
 li, a, button {
@@ -50,12 +56,12 @@ header{
     position: fixed;
     top:0;
     width:100%;
-    z-index: 2;
     background-color:black;
+    z-index: 5;
 }
 
 .contact{
-    margin-right: 5%;
+    margin-right: 12%;
 }
 
 .logo{
@@ -98,20 +104,22 @@ button:hover{
 }
 
 
-.slide {
-    width: 100vw;
-    height: 1000vh;
-    display:flex;
-}
-
-#slide1 {
-    background:white;
-    text-align: center;
+#slide2{
+    margin-top: 800px;
+    display: flex;
 }
 
 #slide3 {
-    background: black;
-    display: block;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#slide4{
+    display: flex;
 }
 
 h3{
@@ -148,24 +156,27 @@ h5:hover{
 }
 
 .about{
-    height: 300vh;
     display: flex;
+    height: 300vh;
 }
 
 .title{
     width: 50%;
-    height:100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
-    color: white;
+    font-size: 60px;
+    color: black;
     font-family: 'Montserrat', sans-serif;
+    margin: 0!important;
+    position: relative;
 }
 
 .pages{
     width:50%;
     color: white;
+    margin-bottom: 0;
 }
 
 .pages div{
@@ -174,7 +185,7 @@ h5:hover{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    color:white;
+    color:black;
 
 }
 
@@ -186,7 +197,23 @@ h5:hover{
 }
 
 .pages div:nth-child(1){
-    background-color: rgba(208, 193, 240, 1);
+    background-color: #d0c1f0;
+    color: white;
+}
+
+.pages div:nth-child(2){
+    background-color: black;
+    color: white;
+}
+
+.pages div:nth-child(3){
+    background-color: #d0c1f0;
+    color: white;
+}
+
+.pages div:nth-child(4){
+    background-color: black;
+    color: white;
 }
 
 .pages div>button{
@@ -205,85 +232,6 @@ h5:hover{
     border: 2px solid #fff;
 }
 
-.container{
-    width: 1280px;
-    min-height: 500px;
-    margin: 110px auto 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.container .box{
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    box-sizing: border-box;
-    display: inline-block; 
-}
-
-.container .box .imgBox{
-    position: relative;
-    overflow: hidden;
-}
-
-.container .box .imgBox img{
-    max-width: 100%;
-    height: 300px;
-    transition: transform 2s;
-}
-
-.container .box:hover .imgBox img{
-    transform: scale(1.2);
-}
-
-.container .box .details{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0,0,0,.8);
-    transform: scaleY(0);
-    transition: transform .5s;
-}
-.container .box:hover .details{
-    transform: scaleY(1);
-}
-
-.container .box .details .content{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 15px;
-    color: #fff;
-    text-align: center;
-    margin-left: 18%;
-}
-
-.container .box .details .content p{
-    margin: 0;
-    padding: 0; 
-    font-size: 20px;
-    color: #d0c1f0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container .box .details .content button{
-margin-top: 25px;
-color: #fff;
-background-color: rgba(0,0,0,.8);
-border: 2px solid #fff;
-}
-
-.container .box .details .content button:hover{
-    margin-top: 25px;
-    color: rgba(0,0,0,.8);
-    background-color:#fff;
-    border: 2px solid rgba(0,0,0,.8);
-}
-    
 .button {
     display: inline-block;
     padding: 0.75rem 1.25rem;
@@ -309,6 +257,7 @@ border: 2px solid #fff;
     border-radius: 10rem;
     z-index: -2;
 }
+
 .button:before {
     content: '';
     position: absolute;
@@ -328,42 +277,1450 @@ border: 2px solid #fff;
     width: 100%;
 }
 
-.typewriter h1 {
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 400px;
-    overflow: hidden; 
-    border-right: .15em solid #d0c1f0; 
-    white-space: nowrap; 
-    letter-spacing: .15em; 
-    animation: 
-      typing 3.5s steps(40, end),
-      blinkLine .5s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blinkLine {
-    from, to { border-color: transparent }
-    50% { border-color: #d0c1f0 }
-}
-  
-.typewriter{
-    margin-left: 20%;
-}
-
-h1:hover{
+.typewriter h1:hover{
     font-family: 'Bungee Shade', cursive;
     color: #d0c1f0;
     cursor: pointer;
 }
 
-h1:active{
+.typewriter h1:active{
     font-family: 'Poiret One', cursive;
     cursor: pointer;
     color: #99E5FF;
 
+}
+
+.typewriter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.typewriter h1{
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    animation: type 3.5s steps(40, end), blinkLine .5s ease infinite;
+    border-right: 4px solid #d0c1f0; 
+    letter-spacing: .15em;
+
+}
+
+@keyframes type{
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blinkLine{
+    0% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: #d0c1f0;
+    }
+}
+
+.parallax1{
+    background-image: url(../images/foodie/geopattern2.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.parallax2{
+    background-image: url(../images/foodie/geopattern6.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+}
+
+.parallax3{
+    background-image: url(../images/foodie/foodiebackground.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+}
+
+.parallax4{
+    background-image: url(../images/planter_paws/platerpaws_bg.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+}
+
+.parallax5{
+    background-image: url(../images/rohr/purple_graphic.png);
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+}
+
+.parallax6{
+    background-image: url(../images/rohr/back_background.jpg);
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+}
+
+.parallax7{
+    background-image: url(../images/rohr/lion_background.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+}
+
+.parallax8{
+    background-image: url(../images/rohr/boxing_man_background.jpg);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+}
+
+.parallax9{
+    background-image: url(../images/rohr/colourful_graphic.png);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+    background-color: white;
+}
+
+.parallax10{
+    background-image: url(../images/rohr/font-bg.png);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+    background-color: white;
+}
+
+.parallax11{
+    background-image: url(../images/rohr/purple_graphic.png);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+    background-color: white;
+}
+
+.parallax12{
+    background-image: url(../images/raptors/raptorsgraphic.png);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+}
+
+.parallax13{
+    background-image: url(../images/raptors/raptorsgraphic.png);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover; 
+    margin-top: 0;
+    background-color: white;
+}
+
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    text-align: center;
+    padding: 100px;
+    margin: 0;
+    font-size: 40px;
+    width: 100%;
+}
+
+.project-title{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.transparency{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 20px 50px 20px;
+}
+
+#foodie{
+    background-image: url(../images/foodie/Foodie-App-MockupGREYSCALE.png);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#foodie p{
+    color: #f25260;
+}
+
+#foodie:hover{
+    background-image: url(../images/foodie/Foodie-App-Mockup.png);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+#foodie button:hover{
+    color: white;
+    background: #f25260;
+}
+
+#foodie button{
+    color: #f25260;
+    border: 2px solid #f25260;
+    margin-top: 20px;
+    background: transparent;
+}
+
+#planter-paws{
+    background-image: url(../images/planter_paws/pp-iconsGREYSCALE.jpg);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#planter-paws:hover{
+    background-image: url(../images/planter_paws/pp-icons.jpg);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#planter-paws p{
+    color: #566b22;
+}
+
+.project-button:hover{
+    color: white;
+}
+
+#pp-button:hover{
+    color: white;
+    background: #566b22;
+}
+
+#planter-paws button{
+    color: #566b22;
+    border: 2px solid #566b22;
+    margin-top: 20px;
+    background: transparent;
+}
+
+#rohr{
+    background-image: url(../images/rohr/rohrhoodieGREYSCALE.jpg);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#rohr:hover{
+    background-image: url(../images/rohr/rohrhoodie.jpg);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#rohr p{
+    color: #7c6990;
+}
+
+#rohr button:hover{
+    color: white;
+    background: #7c6990;
+}
+
+#rohr button{
+    color: #7c6990;
+    border: 2px solid #7c6990;
+    margin-top: 20px;
+    background: transparent;
+}
+
+
+#icons{
+    background-image: url(../images/raptors/raptors-iconsGREYSCALE.jpg);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#icons:hover{
+    background-image: url(../images/raptors/raptors-icons-main.jpg);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#icons p{
+    color: gold;
+}
+
+#icons button:hover{
+    color: white;
+    background: gold;
+}
+
+#icons button{
+    color: gold;
+    border: 2px solid gold;
+    margin-top: 20px;
+    background: transparent;
+}
+
+#raptors-logo{
+    background-color: gold;
+    padding: 50px;
+}
+
+#raptors-logo{
+    background-image: url(../images/raptors/raptors_3d_mainGReYSCALE.png);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#raptors-logo:hover{
+    background-image: url(../images/raptors/raptors_3d_main.png);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#raptors-logo p{
+    color: #ce1141;
+}
+
+#raptors-logo button:hover{
+    color: white;
+    background: #ce1141;
+}
+
+#raptors-logo button{
+    color: #ce1141;
+    border: 2px solid #ce1141;
+    margin-top: 20px;
+    background: transparent;
+}
+
+#pool{
+    background-image: url(../images/pool/pool-colorGREYSCALE.png);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#pool:hover{
+    background-image: url(../images/pool/pool-color.png);
+    padding: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+}
+
+#pool p{
+    color: #87CEFA;
+}
+
+#pool button:hover{
+    color: white;
+    background: #87CEFA;
+}
+
+#pool button{
+    color: #87CEFA;
+    border: 2px solid #87CEFA;
+    margin-top: 20px;
+    background: transparent;
+}
+
+.project-subtitle{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.main-overview{
+    margin-top: 150px;
+}
+
+.foodie-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #f25260;
+}
+
+.ux{
+    text-align: center;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+}
+
+.project-details{
+    margin: 50px 200px;
+}
+
+.brief{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #97a629;
+}
+
+.brief-details{
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: grey;
+    line-height: 1.5em;
+}
+
+.software-used{
+    margin: 50px 200px;
+}
+
+.software-used p{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #f25260;
+    margin-bottom: 50px;
+}
+
+.software-used ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.software-used li{
+    width: 15%;
+}
+
+.software-used li img{
+    max-width: 100%;
+}
+
+
+.about-foodie{
+    display: flex;
+    height: 400vh;
+}
+
+
+.pages-foodie{
+    width:50%;
+    color: white;
+    margin-bottom: 0;
+}
+
+.pages-foodie div{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:black;
+
+}
+
+.pages-foodie div>p{
+    width: 80%;
+    font-size:18px;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:0;
+}
+
+.pages-foodie div:nth-child(1){
+    background-color: #f25260;
+    color: white;
+}
+
+.pages-foodie div:nth-child(2){
+    background-color: #97a629;
+    color: white;
+}
+
+.pages-foodie div:nth-child(3){
+    background-color: #f25260;
+    color: white;
+}
+
+.pages-foodie div:nth-child(4){
+    background-color: #97a629;
+    color: white;
+}
+
+
+#foodie-slide{
+    margin-top: 200px;
+    display: flex;
+}
+
+.brief-title{
+    font-size: 24px;
+    color: white;
+    padding: 30px;
+}
+
+.comp-analysis{
+    margin: 100px 200px;
+
+}
+
+.analysis-chart img{
+    max-width: 100%;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid grey;
+}
+
+.apps-used{
+    margin: 150px 100px 80px 100px;
+}
+
+.apps-used p{
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #f25260;
+    margin-bottom: 50px;
+}
+
+.apps-used ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.apps-used li{
+    width: 18%;
+    text-align: center;
+    margin-top: 15px;
+    color: gray;
+
+}
+
+.apps-used li img{
+    max-width: 100%;
+    margin-top: 25px;
+}
+
+.analysis-title{
+    color: #f25260;
+    text-align: left;
+    padding: 0 0 20px 0;
+    font-size: 24px;
+}
+
+.analysis{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: #97a629;
+}
+
+.strengths{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #97a629;
+}
+
+.weaknesses{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: #97a629;
+}
+
+.competition{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.competitor{
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 0px 20px; 
+}
+
+.competitor li{
+    color: gray;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.border-right{
+    border-right: 2px solid #e7e7e7;
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 0px 20px; 
+    border-right: 1px solid black;
+}
+
+.border-right li{
+    color: gray;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.strengths-weak{
+    margin-bottom: 80px;
+    padding: 0;
+    text-align: center;
+    color: grey;
+}
+
+.user-persona{
+    padding: 100px 200px 50px;
+    text-align: center;
+}
+
+.persona-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.persona-subtitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: grey;
+    text-align: left;
+}
+
+.user-persona img{
+    max-width: 100%;
+}
+
+.storyboard{
+    padding: 50px 200px 20px;
+    text-align:center;
+}
+
+.storyboard-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.storyboard-subtitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: grey;
+    text-align:left;
+    line-height: 1.5em;
+    margin-bottom: 50px;
+}
+
+.storyboard img{
+    max-width: 80%;
+
+}
+
+.logo-design{
+    padding: 50px 200px 30px;
+    text-align: center;
+}
+
+.logo-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+
+.logo-design img{
+    max-width: 80%;
+    text-align: center;
+}
+
+.colors{
+    padding: 50px 200px 10px;
+    text-align: center;
+}
+
+.colors-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+
+.colors img{
+    max-width: 80%;
+    text-align: center;
+}
+
+.font{
+    padding: 10px 200px 30px;
+    text-align: center;
+}
+
+.font-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.font img{
+    max-width: 80%;
+    text-align: center;
+}
+
+.journeymap{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.map-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.journeymap img{
+    max-width: 100%;
+    text-align: center;
+}
+
+.lofi{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.lofi-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.lofi img{
+    max-width: 70%;
+    text-align: center;
+}
+
+.midfi{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.midfi-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.midfi img{
+    max-width: 70%;
+    text-align: center;
+}
+
+.hifi{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.hifi-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #f25260;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.hifi img{
+    max-width: 70%;
+    text-align: center;
+}
+
+.xd-link{
+    text-align: center;
+    padding: 50px;
+}
+.xd-link-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #f25260;
+}
+
+
+.xd-button{
+    background-color: #f25260;
+}
+
+
+.foodie-top{
+    color: black;
+}
+
+.foodie-top-link{
+    text-align: center;
+    padding: 50px;
+}
+
+.heading{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 100px 200px;
+}
+
+.heading h2{
+    padding: 0;
+    color: #f25260;
+    font-style: italic;
+    line-height: 1.5em;
+    font-size: 26px;
+}
+
+.foodie-logo{
+    text-align: center;
+    padding-top: 30px;
+}
+
+#ff-logo{
+    width: 50%;
+}
+
+.journeymap .brief-details{
+    text-align: left;
+}
+
+.user-persona .brief-details{
+    text-align: left;
+}
+
+.lofi .brief-details{
+    text-align: left;
+}
+
+.midfi .brief-details{
+    text-align: left;
+}
+
+.hifi .brief-details{
+    text-align: left;
+}
+
+#feature{
+    max-width: 40%;
+}
+
+#max-icon{
+    max-width: 30%;
+}
+
+#max-used{
+    text-align: center;
+}
+
+.used-title{
+    text-align: left;
+}
+
+#pp-logo{
+    max-width: 20%;
+}
+
+.sketch{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.sketch-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #97a629;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.sketch img{
+    max-width: 50%;
+    text-align: center;
+}
+
+.sketch .brief-details{
+    text-align: left;
+}
+
+.reference{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 50px;
+    justify-content: space-evenly;
+}
+
+.reference img{
+    width: 35%;
+}
+
+#kahlua{
+    height: auto;
+    
+}
+
+.max{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.max-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #97a629;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.max img{
+    max-width: 80%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.max .brief-details{
+    text-align: left;
+}
+
+.render{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.render-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #97a629;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.render img{
+    width: 20%;
+    text-align: center;
+    padding: 20px 80px;
+}
+
+.render .brief-details{
+    text-align: left;
+}
+
+.render-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#pp-product{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.tink{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.tink-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    color: #97a629;
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.tink img{
+    width: 30%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.tink .brief-details{
+    text-align: left;
+}
+
+
+.tink-detail-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    color: #97a629;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#covid{
+    color: black;
+}
+
+#rohr-body{
+    background-color: black;
+}
+
+.rohr-title{
+    font-family: 'SpaceAge', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+#rohr-1{
+    margin-top: 200px;
+    text-align: center;
+    height: 100vh;
+}
+
+#rohr-logo{
+    max-width: 50%;
+}
+
+#ourgoal{
+    text-align: center;
+    padding: 100px;
+    margin: 100px 0;
+}
+
+.rohr-section-title{
+    color: white;
+    text-align: center;
+    font-family: 'SpaceAge', sans-serif;
+    font-size: 35px;
+}
+
+.rohr-section-title_purple{
+    color: #7c6990;
+    text-align: center;
+    font-family: 'SpaceAge', sans-serif;
+    font-size: 40px;
+}
+
+.rohr-section-subtitle{
+    color: #7c6990;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.rohr-section-details{
+    color: white;
+    font-family: 'Gotham', sans-serif;
+    line-height: 1.5em;
+    font-size: 24px;
+    padding: 0 200px;
+}
+
+.rohr-section-details_black{
+    color: black;
+    font-family: 'Gotham', sans-serif;
+    line-height: 1.5em;
+    font-size: 20px;
+    padding: 0 200px;
+}
+
+.rohr-section-details_grey{
+    color: grey;
+    font-family: 'Gotham', sans-serif;
+    line-height: 1.5em;
+    font-size: 20px;
+    padding: 0 200px;
+}
+
+.guidelines-1{
+    display: flex;
+    padding: 80px;
+    justify-content: space-around;
+}
+
+.guidelines-main{
+    list-style-type: none;
+    font-size: 27px;
+    line-height: 1.5em;
+    color: #7c6990;
+    padding-top: 25px;
+}
+
+.guidelines-sub{
+    list-style-type: none;
+    font-size: 18px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    color: grey;
+
+}
+
+.guidelines-list{
+    width: 150%;
+}
+
+.guidelines-list-2{
+    width: 70%;
+}
+
+#guidelines{
+    padding-top: 50px;
+    background-color: white;
+}
+
+.brandmark{
+    background-color: white;
+    color: black;
+    padding: 100px;
+    text-align: center;
+}
+
+.brandmark img{
+    max-width: 90%;
+    margin-top: 50px;
+}
+
+#logo-system{
+    padding-bottom: 50px;
+}
+
+.clear-space{
+    background-color: white;
+    color: black;
+    padding: 100px;
+    text-align: center;
+}
+
+.clear-space img{
+    max-width: 80%;
+    margin-top: 50px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.rohr-colors{
+    background-color: white;
+    color: black;
+    padding: 100px;
+    text-align: center;
+}
+
+.rohr-colors img{
+    max-width: 80%;
+    margin-top: 50px;
+    padding: 100px 0;
+}
+
+.integrity{
+    text-align: left;
+    padding: 50px 100px;
+}
+
+.integrity li{
+    color: grey;
+    list-style-type: none;
+    line-height: 1.5em;
+    padding: 10px;
+    width: 60%;
+    font-size: 18px;
+    padding-left: 20%;
+}
+
+.rohr-font{
+    background-color: white;
+    color: black;
+    padding: 100px;
+    text-align: center;
+}
+
+.rohr-font img{
+    max-width: 80%;
+    margin-top: 50px;
+}
+
+.applications{
+    background-color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+.application-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.application-list li{
+    height: 50vh;
+    flex-grow: 2;
+}
+
+.application-list img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    padding: 10px;
+}
+
+.rohr-top-link{
+    text-align: center;
+    padding: 50px;
+}
+
+
+.projects-main-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-main-list li{
+    height: 50vh;
+    flex-grow: 2;
+    list-style-type: none;
+}
+
+.projects-main-list img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: contain;
+    vertical-align: bottom;
+    padding: 10px;
+}
+
+ul.projects-main-list{
+    margin:0;
+    padding-left: 0;
+}
+
+#raptors-body{
+    background-color: black;
+}
+
+.champions-image{
+    text-align: center;
+    padding: 150px 100px;
+}
+
+#championslogo{
+    max-width: 80%;
+}
+
+.raptors-section{
+    text-align: center;
+    padding: 100px;
+}
+
+.raptors-title{
+    font-family: 'Adidas', sans-serif;
+    color: #b5985a;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 100px;
+}
+
+#championsintro{
+    max-width: 70%;
+    padding: 30px 0;
+}
+
+#mindmap{
+    max-width: 80%;
+}
+
+#roster{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 100px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.rosterimg img{
+    width: 30%;
+    margin-top: 20px;
+}
+
+.raptors-player{
+    background-color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+.player-img{
+    max-width: 90%;
+}
+
+.icons-top-link{
+    padding: 50px;
+    text-align: center;
+}
+
+#ai-icon{
+    width: 90%
+}
+
+.pool-title{
+    margin-top: 200px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.pool-subtitle{
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+}
+
+.video{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.pool-logo{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.pool-logo img{
+    max-width: 30%;
+}
+
+.raptors-3d-title{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#dmax-icon{
+    width: 300px;
+}
+
+.slide-img{
+    max-width: 80%;
+}
+
+#email{
+    color: #d0c1f0;
+}
+
+#email:hover{
+    color: white;
+}
+
+footer{
+    padding: 80px;
+    text-align: center;
+}
+
+footer img{
+    max-width: 5%;
+}
+
+footer p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
