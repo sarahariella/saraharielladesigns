@@ -17,18 +17,27 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Montserrat:300,500,700|Poiret+One&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.3.0/dist/simpleParallax.min.js"></script>
 </head>
-<body>
+<body id="foodie-body">
     <header>
-        <nav>
-            <ul class="nav_links">
-                <li><a class="logo"href="index.html">saraharielladesigns</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#work">Work</a></li>
-            </ul>
+        <nav class="navbar">
+            <div class="brand-title">
+                <a class="logo"href="index.html#home">saraharielladesigns</a>
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#work">Work</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <a href="index.html#contact" class="button">Contact</a>
     </header>
-    <main>
+    <main id="foodie-body">
         <section id="#top"class="main-overview"></section>
             <h1 class="foodie-title">Finicky Foodie App Design</h1>
             <p class="ux">User Experience Case Study</p>
@@ -54,7 +63,7 @@
             </div>
             <section class="slide-foodie" class ="about-foodie"id="foodie-slide"> 
                     <div class="title">
-                        <h6>Project Brief</h6>
+                        <h6 class="foodie-brief">Project Brief</h6>
                     </div>
                     <div class="pages-foodie">
                         <div>
@@ -167,7 +176,7 @@
                         <li>Users reviews found a lot of recipes quite difficult</li>
                     </ul>
                 </div>   
-                <div class="competitor">
+                <div class="competitor"id="fridge-food" >
                     <h2 class="analysis-title">My Fridge Food</h2>
                     <p class="strengths">Strengths</p>
                     <ul>
@@ -312,6 +321,11 @@
             <a href="#top"class="foodie-top">Back to top</a>
         </section>
     </main>
+    <footer>
+        <img src="assets/images/favicon.png">
+        <p> &copy; SarahAriellaDesigns 2020 </p>
+        <p class="text-purple">This website was coded by yours truly</p>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="assets/js/main.js" ></script>
 </body>
