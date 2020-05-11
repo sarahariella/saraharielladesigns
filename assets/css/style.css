@@ -1106,13 +1106,6 @@ footer{
     text-align: left;
 }
 
-.render-items{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 #pp-product{
     display: block;
     margin-left: auto;
