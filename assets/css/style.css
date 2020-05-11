@@ -1099,6 +1099,7 @@ footer{
     max-width: 100%;
     text-align: center;
     padding: 20px 80px;
+    height: auto;
 }
 
 .render .brief-details{
