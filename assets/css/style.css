@@ -1048,13 +1048,12 @@ footer{
 }
 
 .reference img{
-    width: 80%;
+    max-width: 100%;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 #kahlua{
-    height: auto;
     margin-bottom: 10px;
 }
 
@@ -1097,7 +1096,7 @@ footer{
 }
 
 .render img{
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     padding: 20px 80px;
 }
