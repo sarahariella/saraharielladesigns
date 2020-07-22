@@ -582,6 +582,9 @@ footer{
     max-width: 100%;
 }
 
+#cv{
+    width: 80%;
+}
 
 .pages-foodie div{
     display: flex;
