@@ -490,6 +490,10 @@ footer p{
     max-width: 80%;
 }
 
+.resume{
+    color: white;
+}
+
 #email{
     color: #d0c1f0;
 }
