@@ -498,6 +498,15 @@ footer p{
     color:white;
 }
 
+p.resume{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#resumedownload{
+    padding: 10px;
+}
+
 #email{
     color: #d0c1f0;
 }
@@ -1167,6 +1176,13 @@ footer{
 
 /*rohr*/
 
+#rohrbook{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: black;
+    padding-bottom: 100px;
+}
+
 #rohr-body{
     background-color: black;
 }
@@ -1187,6 +1203,7 @@ footer{
 
 #rohr-logo{
     max-width: 50%;
+    
 }
 
 #ourgoal{
@@ -1368,6 +1385,9 @@ footer{
 
 .rohr-footer{
     background-color: white;
+    margin-top: 100px;
+    padding-top: 200px;
+
 }
 
 /*raptors*/
@@ -2235,7 +2255,7 @@ footer{
     }
 
     #rohr-logo{
-        max-width: 50%;
+        max-width: 30%;
     }
 
     #ourgoal{
